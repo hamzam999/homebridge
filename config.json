@@ -1,0 +1,65 @@
+{
+        "bridge": {
+                "name": "hamza's Homebridge",
+                "username": "C8:28:EB:14:31:37",
+                "port": 51826,
+                "pin": "033-45-158"
+        },
+
+
+
+
+        "platforms": [
+
+                {
+    "platform": "Server",
+    "port"    : 8765,
+    "name"    : "Homebridge Server",
+    "log"     : "<PATH_TO_YOUR_LOG_FILE>",
+    "restart" : "<sudo reboot>"
+        },
+
+                        {
+                        "platform": "Blynk",
+                        "name": "Blynk",
+                        "server": "http://192.168.2.3",
+                        "httpsPort": "8080",
+                        "token": "29fd805a052044c4975bdaf0a8351714",
+                        "dashboardName": "Blynk Switches",
+
+
+                        "accessories": [{
+                                        "name": "Switch 1",
+                                        "widget": "Switch",
+                                        "mode":"SWITCH",
+                                        "caption": "Lamp 1",
+                                        "pin": "D1"
+                                },
+                                {
+                                        "name": "Switch 2",
+                                        "widget": "Switch",
+                                        "mode":"SWITCH",
+                                        "caption": "lamp 2",
+                                        "pin": "D2"
+                                },
+                                {
+                                        "name": "Switch 3",
+                                        "widget": "Switch",
+                                        "mode":"SWITCH",
+                                        "caption": "lamp 3",
+                                        "pin": "D3"
+				 },
+				 {
+                                        "name": "Switch 4",
+                                        "widget": "Switch",
+                                        "mode":"SWITCH",
+                                        "caption": "lamp 4",
+                                        "pin": "D4"
+                                }
+                        ]
+
+                }
+        ],
+        "accessories": []
+                                }
+
